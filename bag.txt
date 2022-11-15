@@ -1,3 +1,6 @@
 cup
 plate
 bowl
+map
+world
+ball
