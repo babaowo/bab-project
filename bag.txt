@@ -4,3 +4,12 @@ bowl
 map
 world
 ball
+
+TABLE
+CHAIR
+PENCIL
+CASE
+GLASSES
+LAPTOP
+FUSE
+SWITCH
