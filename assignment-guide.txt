@@ -1,0 +1,3 @@
+1. Create a folder under basic-html folder, call it any name you want, also create other html files inside.
+2. under the step 1 folder, ctreate another folder, call it any name you want, and create other html files inside
+3. in these HTML file carry-out the inter-page link and the intra-page link
