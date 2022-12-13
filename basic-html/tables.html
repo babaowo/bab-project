@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discussing tables</title>
+    <style>
+        td {
+            border: 2px solid black;
+        }
+
+        th {
+            border: 2px solid blue;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Tables in HTML</h1>
+
+    <!-- tables one -->
+
+    <!-- <table>
+        <tr></tr>  // Table row
+        <td></td>  // Table data
+        <th></th>  // Table heading
+        <thead></thead>  // Table Header
+        <tfoot></tfoot>  // Table footer
+        <tbody></tbody>   // Table body
+    </table> -->
+
+    <table>
+      <tr>
+        <td>Name</td>
+        <td>Earning</td>
+      </tr>
+      <tr>
+        <td>Olakunle</td>
+        <td>5000</td>
+      </tr>
+      <tr>
+        <td>Owolabi</td>
+        <td>6000</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <!-- level two -->
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Earning</th>
+      </tr>
+      <tr>
+        <td>Olakunle</td>
+        <td>5000</td>
+      </tr>
+      <tr>
+        <td>Owolabi</td>
+        <td>6000</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <!-- third level -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Job Title</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Olakunle</td>
+          <td>Developer</td>
+          <td>Olakunle@rocketmail.com</td>
+        </tr>
+        <tr>
+          <td>Owolabi</td>
+          <td>Senior Developer</td>
+          <td>owolaabi@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Marcus</td>
+          <td>DevOps</td>
+          <td>marcus@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <!-- level next -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Telephone</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Morunfola</td>
+          <td>Gbadamosi</td>
+          <td>0909774778275584</td>
+          <td>50000</td>
+        </tr>
+        <tr>
+          <td>Ilesanmi</td>
+          <td>Olasunkanmi</td>
+          <td>08973836969822</td>
+          <td>40000</td>
+        </tr>
+        <tr>
+          <td>Akinleye</td>
+          <td>Moses</td>
+          <td>08123423435</td>
+          <td>60000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+            <td>150000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr>
+    <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Telephone</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Morunfola</td>
+            <td>Gbadamosi</td>
+            <td>0909774778275584</td>
+            <td>50000</td>
+          </tr>
+          <tr>
+            <td>Ilesanmi</td>
+            <td>Olasunkanmi</td>
+            <td>08973836969822</td>
+            <td>40000</td>
+          </tr>
+          <tr>
+            <td>Akinleye</td>
+            <td>Moses</td>
+            <td>08123423435</td>
+            <td>60000</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+              <td colspan="3">Total</td>
+              
+              <td>150000</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <hr>
+
+      <!-- Row Span -->
+      <code>Hi,my name is Reuben</code>
+
+      <table>
+        <thead>
+            <tr>
+                <th bgcolor="cecece" colspan="2">Language and Frameworks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Python</td>
+                <td>Django</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Javascript</td>
+                <td>React.js</td>
+            </tr>
+
+            <tr>
+                <td>Vue.js</td>
+            </tr>
+
+            <tr>
+                <td>Ruby</td>
+                <td>Ruby on Rails</td>
+            </tr>
+        </tbody>
+      </table>
+
+      <hr>
+      <!-- Time table -->
+
+      <table>
+        <thead>
+            <tr>
+                <th bgcolor="cecece" colspan="6">Time Table</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th bgcolor="cecece" rowspan="6">Hours</th>
+                <th bgcolor="cecece">Mon</th>
+                <th bgcolor="cecece">Tue</th>
+                <th bgcolor="cecece">Wed</th>
+                <th bgcolor="cecece">Thu</th>
+                <th bgcolor="cecece">Fri</th>
+            </tr>
+
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+
+            <tr>
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+                <td>Sports</td>
+            </tr>
+
+            <tr>
+                <th bgcolor="cecece" colspan="5">Lunch</th>
+            </tr>
+
+            <tr>
+                <td>Science</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>Maths</td>
+                <td rowspan="2">Project</td>
+            </tr>
+
+            <tr>
+                <td>Social</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Social</td>
+            </tr>
+        </tbody>
+      </table>
+
+  </body>
+</html>
