@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+    <style>
+      div {
+        margin: 20px;
+      }
+
+      #btn {
+        width: 60px;
+        background-color: red;
+        border-radius: 5px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" placeholder="Please enter your name" /> <br />
+
+      <p>
+        Username:
+        <input
+          type="text"
+          name="username"
+          size="30"
+          maxlength="30"
+          minlength="10"
+          title="Insert your name"
+          spellcheck="true"
+          required="required"
+        />
+      </p>
+
+      <p>
+        <input
+          type="password"
+          name="password"
+          id=""
+          placeholder="Please enter password"
+        />
+      </p>
+    </div>
+
+    <div>
+      <input type="email" name="email" id="email" />
+      <textarea
+        name="textarea"
+        id=""
+        cols="60"
+        rows="15"
+        placeholder="description"
+      ></textarea>
+    </div>
+
+    <form id="form" action="http://www.example.com/profile.php">
+      <p id="radio" class="set_radio">
+        Please select your favorite genre:
+        <br />
+        <input type="radio" name="genre" value="javascript" /> Javascript
+        <input type="radio" name="genre" value="java" />
+        Java
+        <input type="radio" name="genre" value="python" />
+        Python
+      </p>
+    </form>
+
+    <form class="color" action="http://www.example.com/profile.php">
+      <p>
+        Please select your favorite music service(s):
+        <br />
+        <input type="checkbox" name="color" value="blue" checked="checked" />
+        Blue <input type="checkbox" name="color" value="green" /> Green
+        <input type="checkbox" name="color" value="black" /> Black
+      </p>
+    </form>
+
+    <form action="">
+      <input type="checkbox" name="countries" value="nigeria" id="" /> Nigeria
+      <input type="checkbox" name="countries" value="libya" id="" /> Libya
+      <input type="checkbox" name="countries" value="usa" id="" /> USA <br />
+      <input type="button" value="continue" width="60" id="btn" />
+    </form>
+
+    <form action="http://www.example.com/profile.php">
+      <p>What device do you listen to music on?</p>
+      <select name="devices">
+        <option value="ipod">iPod</option>
+        <option value="radio" selected>Radio</option>
+        <option value="computer">Computer</option>
+      </select>
+    </form>
+
+    <form action="">
+      <p>What's your nationality</p>
+      <select name="country" id="country" multiple>
+        <option value="canada">Canada</option>
+        <option id="ger" value="germany">Germany</option>
+        <option value="italy">Italy</option>
+        <option value="congo">Congo Republic</option>
+      </select>
+    </form>
+
+    <form action="http://www.example.com/upload.php" method="post">
+      <p>Upload your song in MP3 format:</p>
+      <input type="file" name="user-song" /><br />
+      <input type="submit" value="Upload" />
+    </form>
+
+    <form action="">
+      <p>Upload your CV:</p>
+      <input type="file" name="cv" id="" /> <br />
+      <input type="submit" value="Browse" />
+      <!-- <input type="button" value=""> -->
+    </form>
+
+    <form action="http://www.example.com/bookings/" method="post">
+      <label for="username">Departure date:</label>
+      <input type="date" name="depart" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <form action="http://www.example.org/search.php">
+      <p>Search:</p>
+      <input type="search" name="search" placeholder="Enter keyword" />
+      <input type="submit" value="Search" />
+    </form>
+
+    <!-- 
+            HTML CSS JS JSON 
+
+             {
+            "email": "olakunle",
+            "genre": "pop",
+            "password": "1234" ,
+            "service": []
+         }
+    
+         -->
+
+    { "email": "olakunle", "genre": "pop", "password": "1234" , "service":
+    ["blue", "black"] }
+  </body>
+</html>

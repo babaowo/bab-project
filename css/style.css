@@ -1,0 +1,30 @@
+/* Cascading style sheet */
+
+/* 1. using style tag
+2. using style attribute
+3. external */
+
+.color {
+
+    color: red;
+}
+#radio {
+
+    text-align: center;
+}
+
+form {
+
+}
+
+p {
+
+}
+
+
+#country > option {
+
+}
+#country > #ger {
+
+}

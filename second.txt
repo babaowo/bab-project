@@ -1,4 +1,0 @@
-Create a new HTML file
-use the HTML images to create a new image in the file
-use another image ionline to create a new image in the file
-create a table form the image in the images folder
